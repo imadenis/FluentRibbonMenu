@@ -1,0 +1,20 @@
+﻿<Application x:Class="WpfApp2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApp2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Generic.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Themes/Light.Green.Colorful.xaml" />
+
+                <!--<ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Themes/Dark.Green.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="{x:Type ScrollViewer}"
+                   BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollViewer}" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
